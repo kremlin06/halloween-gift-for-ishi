@@ -2,7 +2,6 @@ import { useState } from 'react'
 import MusicPlayer from './MusicPlayer.jsx'
 import { letterTitle, letterParagraphs, closingLine } from './config.js'
 
-// Small floating ghosts and sparkles in the background (decoration only)
 const floaters = [
   { symbol: '👻', left: '8%', top: '12%', size: '1.6rem', delay: '0s' },
   { symbol: '✦', left: '85%', top: '8%', size: '1rem', delay: '1s' },
@@ -13,17 +12,28 @@ const floaters = [
 ]
 
 function App() {
-  // 'start' -> 'opening' -> 'letter'
   const [scene, setScene] = useState('start')
   const [trickShown, setTrickShown] = useState(false)
+  const musicRef = useRef(null)
 
   const openTreat = () => {
+    musicRef.current?.start()
     setTrickShown(false)
     setScene('opening')
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     setTimeout(() => setScene('letter'), reduced ? 0 : 1100)
   }
 
+  const showTrick = () => {
+    musicRef.current?.start()
+    setTrickShown(true)
+  }
+
+  const returnToStart = () => {
+    setTrickShown(false)
+    setScene('start')
+  }
+  
   return (
     <main className="page">
       <div className="floaters" aria-hidden="true">
@@ -46,12 +56,12 @@ function App() {
       {scene === 'start' && (
         <section className="scene scene-start">
           <div className="big-ghost" aria-hidden="true">👻</div>
-          <h1 className="boo">BOOOO! 👻</h1>
+          <h1 className="boo">BOOOO! 👻 hehe</h1>
           <p className="greeting">happy halloween, shie.</p>
           <p className="hint">someone left a little treat for you.</p>
 
           <div className="choices" role="group" aria-label="trick or treat">
-            <button type="button" className="choice" onClick={() => setTrickShown(true)}>
+            <button type="button" className="choice" onClick={showTrick}>
               Trick
             </button>
             <button type="button" className="choice choice-treat" onClick={openTreat}>
@@ -100,6 +110,8 @@ function App() {
           <MusicPlayer />
         </section>
       )}
+
+      <MusicPlayer ref={musicRef} showControls={scene === 'letter'} onBackToStart={returnToStart} />
     </main>
   )
 }
