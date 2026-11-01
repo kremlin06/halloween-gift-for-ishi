@@ -1,14 +1,35 @@
-// Music settings. Put your audio file in public/audio/ and set its name here.
-// If the file is missing, the music button simply stays hidden.
-export const musicFile = 'audio/song.mp3'
-export const musicButtonText = 'play a little song ♡'
+export const musicFile = 'audio/Another_Love_DANIEL.mp3'
+export const musicButtonText = 'play a little song <3'
 export const musicVolume = 0.5
 
-export const letterTitle = 'hii, shiee. 👻'
+export const letterTitle = 'hii, shiee! 👻'
 
 export const letterParagraphs = [
-  "i don't really know why i'm making this for you, but i guess i just thought of you again. i miss you, you know? sometimes i remember how we first met on june 15, 2025, at 8:58 pm on litmatch, and it still feels a little unreal that a random night led me to you. it's funny how someone can become a part of your memories without you even realizing how much those little moments would mean later on. i don't know where life will take us from here, but i hope you're doing okay, even on the days you don't tell anyone that you're not. i hope you get to do the things you've always wanted, find the happiness you've been looking for, and be kinder to yourself along the way. i guess i just wanted to leave this little something here for you, so you'd know that somewhere, someone is still thinking of you and wishing you well.",
-  'happy halloween, shie. take care of yourself for me, okay? 🤍',
+  "Happy Halloween, Ishi ^^",
+  "I don't really know how to explain why i'm making this for you. maybe because i thought of you again, or maybe because there are some things i still wish i could tell you, even in the simplest ways. i guess i just wanted to make something small that you could come across and know that someone is thinking of you.",
+  "I miss you, you know?",
+  "sometimes, i find myself remembering how we first met on june 15, 2025, at 8:58 pm on litmatch. it's still a little unreal to think that an ordinary night, something i probably wouldn't have remembered so clearly if it weren't for you, eventually became a memory i hold this close. funny how life works. sometimes, a random conversation introduces you to someone who quietly becomes part of your story. you don't immediately realize how much that person will mean to you until time passes and you find yourself looking back.",
+  "and now, here i am, making another little thing for you.",
+  "i know you haven't been feeling well, shie. i remember everything you told me, and i want you to know that i haven't taken any of it lightly. your fever, the chills that made you cry because you were so cold, your headache, sore throat, the cramps and numbness in your hands and feet, and the dizziness you've been experiencing. i've been thinking about all of those things, especially because i know about your kidney condition. i may not fully understand what your body is going through, and i won't pretend that i do, but i know enough to understand that you shouldn't have to deal with all of that alone.",
+  "i haven't heard an update from you since yesterday afternoon. honestly, i wish i knew how you're doing right now. i wonder if your fever has gone down, if your head still hurts, if your body feels any better, or if you've finally managed to get some comfortable rest.",
+  "i don't know why you haven't been able to reach out. maybe you're too exhausted, maybe using your phone takes too much effort right now, or maybe you're simply trying to get through the day while your body recovers. whatever the reason may be, i understand that you might not have the energy to talk. i'm not upset with you, and i'm not expecting you to explain your silence.",
+  "but i'd be lying if i said i wasn't worried.",
+  "even with all the things i have to accomplish, the tasks waiting for me, and the responsibilities i need to handle, my mind somehow finds its way back to you. i can be occupied with something completely different, and then suddenly i'll wonder how you're feeling. i keep thinking about whether you've eaten, whether you've been able to sleep, whether someone is checking on you, and whether you're getting the care you need.",
+  "i even found myself wishing i could be there beside you. not necessarily to say anything extraordinary, but simply to be present. to sit with you, check how you're doing, accompany you if you need medical attention, or just make sure you don't feel alone while you're having a difficult time. sometimes, being there for someone doesn't require the perfect words. sometimes, it simply means having someone beside you when things aren't okay.",
+  "i know i can't do all of that from where i am. and that is probably one of the hardest parts of caring about someone from a distance. i can send messages, make little things like this, and remind you that i'm here, but i can't personally see how you're doing or make the discomfort disappear.",
+  "still, please don't neglect yourself, shie.",
+  "i know your family is already aware of what you've been experiencing, and i'm glad you're not facing this without people around you who can look after you. please let them help you, especially while you're feeling weak. if you're still experiencing the fever, severe chills, dizziness, headache, or the cramps and numbness in your hands and feet, please make sure you receive proper medical attention and follow the advice of your healthcare provider. especially because of your IgA nephropathy, i don't want you to dismiss these symptoms or simply wait for them to disappear. don't force yourself to do things when your body is asking you to rest. you don't have to manage everything on your own, ishi. your health deserves your attention, and so do you.",
+  "and please, don't feel pressured to reply to this message, okay? hindi mo kailangang pilitin ang sarili mong mag-type ng mahaba, mag-explain, or even reassure me just because i'm worried. i understand na baka wala ka talagang energy ngayon, and that's okay. mas gusto kong makapagpahinga ka nang maayos at maalagaan kaisa pilitin mo pa ang sarili mong makipag-usap kahit hindi maganda ang pakiramdam mo.",
+  "pero kapag okay ka na and you feel well enough to use your phone, i'd really appreciate even a small update. kahit simpleng sabihin mo lang kung kumusta ka na or kung medyo gumagaan na pakiramdam mo. i just want to know how you're doing, shie. i've been wondering about you more than you probably realize.",
+  "i hope life becomes a little kinder to you. sana maabot mo pa rin lahat ng mga bagay na matagal mo nang pinapangarap, mapuntahan mo yung mga lugar na gusto mong makita, and experience the kind of happiness you've always been looking for. i hope you learn to be gentler with yourself, especially during the days na pagod ka, overwhelmed, or hindi mo alam kung paano haharapin ang mga bagay-bagay. you don't always have to be strong, shie. hindi mo kailangang kayanin lahat mag-isa. it's okay to take a break, ask for help, and let other people care for you.",
+  "and despite everything, i hope you never forget that your worth isn't measured by what you accomplish, what you can give to other people, or how well you're doing every single day. mahalaga ka kahit hindi ka okay, kahit wala kang nagagawang productive, and even on the days when you don't feel like yourself. you don't have to prove anything just to deserve care and kindness.",
+  "i honestly don't know what the future holds for us, shie, and maybe that's okay. hindi naman natin kailangang malaman lahat ngayon. for what it's worth, i'm genuinely grateful that our paths crossed that night. out of all the people i could've met, somehow, life led me to you. and even with all the unexpected turns, the memories we've shared will always mean something to me. i'm glad i got to know you, and i hope life brings you the happiness and peace you've always deserved.",
+  "so, for tonight, i just wanted to leave you this little something. not because i'm expecting anything in return, but because i wanted you to have a small reminder that somewhere, even in the middle of a busy day, someone still thinks about you, remembers you, and sincerely wishes that things get better for you.",
+  "Kaluguran daka, Shie.",
+  "please get well soon, okay? take your time, rest whenever you need to, and don't be too hard on yourself. sana paggising mo, kahit papaano, mas magaan na ang pakiramdam mo.",
+  "happy halloween, shie ^^",
+  "i hope tonight is kinder to you. <3",
+  "take care of yourself for me, okay? <3",
 ]
 
-export const closingLine = 'one little treat, just for you. 🤍'
+export const closingLine = 'one little treat, just for you. <3'
