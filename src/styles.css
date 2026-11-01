@@ -189,17 +189,20 @@ button:focus-visible {
   background: #d9a5a0;
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
+  perspective: 42rem;
+  isolation: isolate;
 }
 
 .envelope-letter {
   position: absolute;
   left: 1rem;
   right: 1rem;
-  top: 0.6rem;
+  top: 0.8rem;
   height: 7rem;
   background: var(--cream);
   border-radius: 0.3rem;
-  animation: letter-rise 1s ease 0.3s both;
+  z-index: 1;
+  animation: letter-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s both;
 }
 
 .envelope-front {
@@ -208,6 +211,7 @@ button:focus-visible {
   background: #e8b7ae;
   border-radius: 0.5rem;
   clip-path: polygon(0 0, 50% 55%, 100% 0, 100% 100%, 0 100%);
+  z-index: 3;
 }
 
 .envelope-flap {
@@ -218,9 +222,11 @@ button:focus-visible {
   height: 5rem;
   background: #cf8f8c;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
-  transform-origin: top;
-  animation: flap-open 0.6s ease both;
-  z-index: 2;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation: flap-open 0.65s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  z-index: 4;
 }
 
 /* letter */
@@ -328,6 +334,9 @@ button:focus-visible {
 }
 
 @keyframes flap-open {
+  from {
+    transform: rotateX(0deg);
+  }
   to {
     transform: rotateX(180deg);
     z-index: 0;
@@ -336,10 +345,12 @@ button:focus-visible {
 
 @keyframes letter-rise {
   from {
-    transform: translateY(0);
+    transform: translateY(5rem);
+    opacity: 0;
   }
   to {
     transform: translateY(-2.5rem);
+    opacity: 1;
   }
 }
 
