@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import MusicPlayer from './MusicPlayer.jsx'
 import { letterTitle, letterParagraphs, closingLine } from './config.js'
 
@@ -33,7 +33,7 @@ function App() {
     setTrickShown(false)
     setScene('start')
   }
-  
+
   return (
     <main className="page">
       <div className="floaters" aria-hidden="true">
@@ -107,7 +107,6 @@ function App() {
             ))}
           </article>
           <p className="closing">{closingLine}</p>
-          <MusicPlayer />
         </section>
       )}
 
